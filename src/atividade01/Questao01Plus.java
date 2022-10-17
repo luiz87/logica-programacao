@@ -15,12 +15,11 @@ public class Questao01Plus {
         // aprovado >= 7, recuperação >= 4 , reprovado < 4
         if (media >= 7) {
             System.out.println("Aprovado");
+        } else if (media >= 4) {
+            System.out.println("Recuperação");
         } else {
-            if (media >= 4) {
-                System.out.println("Recuperação");
-            } else {
-                System.out.println("Reprovado");
-            }
+            System.out.println("Reprovado");
         }
+
     }
 }

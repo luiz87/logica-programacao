@@ -13,7 +13,7 @@ public class Questao01Plus {
         double media = (nota01 + nota02) / 2;
         System.out.println("Média Final : " + media);
         // aprovado >= 7, recuperação >= 4 , reprovado < 4, erro digitação > 10 ou < 0
-        if (media > 10 || media < 0) { 
+        if (media > 10 || media < 0) {
             System.out.println("Erro digitação");
         } else if (media < 4) {
             System.out.println("Reprovado");

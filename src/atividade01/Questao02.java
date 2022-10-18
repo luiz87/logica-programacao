@@ -7,7 +7,7 @@ public class Questao02 {
         Scanner ler = new Scanner(System.in);
         System.out.println("Digite 1 núemro:");
         int n = ler.nextInt();
-        ler.close();
+        // ler.close();
         System.out.print("Anterior: "+(n-1)+"\nPosterior: "+(n+1)+"\nDigitado: "+n);
     }
 }

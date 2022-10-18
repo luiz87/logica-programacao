@@ -10,7 +10,7 @@ public class Questao06 {
         System.out.println("Pessoas:");
         int pessoas = ler.nextInt();
         float valorPorPessoa = valorConta/pessoas;
-        ler.close();
+        // ler.close();
         System.out.println(String.format("Cada pessoa vai pagar %.2f", valorPorPessoa));
     }
 }

@@ -9,7 +9,7 @@ public class Questao01 {
         double nota01 = ler.nextDouble();
         System.out.println("Digite 1 numero:");
         double nota02 = ler.nextDouble();
-        ler.close();
+        // ler.close();
         double media = (nota01 + nota02) / 2;
         System.out.println("Média Final: " + media);
         if (media >= 7) {

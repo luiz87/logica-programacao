@@ -12,7 +12,7 @@ public class Questao04 {
         float valorHora = ler.nextFloat();
         System.out.println("Quantas horas trabalhadas:");
         float totalHora = ler.nextFloat();
-        ler.close();
+        // ler.close();
         float salario = valorHora * totalHora;
         System.out.println(nome+" vai receber "+ salario);
     }

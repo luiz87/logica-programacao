@@ -15,7 +15,7 @@ public class Questao00 {
         System.out.println("Digite seu sexo:");
         char sexo = ler.next().toCharArray()[0];
 
-        ler.close();
+        //  ler.close();
 
         System.out.println("Informações registradas");
         System.out.println("Nome:"+nome);

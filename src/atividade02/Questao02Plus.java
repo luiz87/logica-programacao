@@ -12,12 +12,20 @@ public class Questao02Plus {
         System.out.println("Digite um número");
         int n3 = ler.nextInt();
 
-        int maior = maior(maior(n1, n2), n3);
-        int menor = menor(menor(n1, n2), n3);
+        int maior = maiorDe3(n1, n2, n3);
+        int menor = menorDe3(n1, n2, n3);
 
-        System.out.println("Maior "+ maior);
-        System.out.println("Menor "+ menor);
+        System.out.println("Maior " + maior);
+        System.out.println("Menor " + menor);
         ler.close();
+    }
+
+    public static int menorDe3(int n1, int n2, int n3) {
+        return menor(menor(n1, n2), n3);
+    }
+
+    public static int maiorDe3(int n1, int n2, int n3) {
+        return maior(maior(n1, n2), n3);
     }
 
     // exemplo pra ser equivalente ao Math.max()

@@ -55,7 +55,11 @@ public class Exemplo03 {
                     // System.out.println(itemSelecionado.toString());
                     for (int i = 0; i < lista.size(); i++) {
                         if (itemSelecionado != null && itemSelecionado.equals(lista.get(i))) {
-                            lista.remove(i);
+                            int confirmacao = JOptionPane.showConfirmDialog(null,
+                                    String.format("Tem certeza que quer apagar o item \"%s\"?", lista.get(i)));
+                            if (confirmacao == 0) {
+                                lista.remove(i);
+                            }
                         }
                     }
                 }

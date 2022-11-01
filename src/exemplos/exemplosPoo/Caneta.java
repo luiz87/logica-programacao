@@ -12,7 +12,7 @@ public class Caneta {
         tampa = false;
         this.modelo = modelo;
         this.cor = cor;
-        carga = 100;
+        carga = 30;
     }
 
     void rabiscar() {
@@ -21,9 +21,13 @@ public class Caneta {
 
     void escrever(String texto) {
         if (tampa) {
-            System.out.println(texto);
-            texto = texto.replaceAll(" ", "");
-            carga -= texto.length();
+            if(carga >= texto.length()){
+                System.out.println(texto);
+                texto = texto.replaceAll(" ", "");
+                carga -= texto.length();
+            }else{
+                System.out.println("Carga insuficioente.");
+            }
         } else {
             System.out.println("Retire a tampa");
         }

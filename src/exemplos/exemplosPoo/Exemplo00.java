@@ -11,5 +11,9 @@ public class Exemplo00 {
         caneta1.printStatus();
         caneta1.escrever("Luiz Felipe Freire Maia");
         caneta1.printStatus();
+        caneta1.escrever("Luiz");
+        caneta1.printStatus();
+        Caneta caneta2 = new Caneta("BIC", "Preta");
+        caneta2.printStatus();
     }
 }

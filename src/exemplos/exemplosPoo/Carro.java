@@ -1,57 +1,28 @@
 package exemplos.exemplosPoo;
 
-public class Carro {
-    private String marca;
-    private String modelo;
-    private int velocidade;
+public class Carro extends Veiculo {
+
+    private int portas;
 
     Carro(String marca, String modelo) {
         this.marca = marca;
         this.modelo = modelo;
+        this.portas = 2;
     }
 
-    public void acelerar(int valor) {
-        System.out.print(velocidade + " + " + valor);
-        velocidade += valor;
-        if (velocidade >= 200) {
-            velocidade = 200;
-        }
-        System.out.println(" > " + velocidade);
-    }
-
-    public void frear(int valor) {
-        System.out.print(velocidade + " - " + valor);
-        velocidade -= valor;
-        if (velocidade < 0) {
-            velocidade = 0;
-        }
-        System.out.println(" > " + velocidade);
+    Carro(String marca, String modelo, int portas) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.portas = portas;
     }
 
     @Override
     public String toString() {
-        return "Carro [marca=" + marca + ", modelo=" + modelo + ", velocidade=" + velocidade + "]";
+        return "Carro [marca=" + marca + ", modelo=" + modelo + ", velocidade=" + velocidade + ", portas=" + portas
+                + "]";
     }
 
     public void printStatus() {
         System.out.println(toString());
     }
-
-    // métodos de retorno
-    public String getMarca(){
-        return marca;
-    }
-
-    public String getModelo() {
-        return modelo;
-    }
-
-    public int getVelocidade() {
-        return velocidade;
-    }
-
-    // metodo de acesso
-    // public void setMarca(String marca){
-    //     this.marca = marca;
-    // }
 }
